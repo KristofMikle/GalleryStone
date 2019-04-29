@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryStone", "GalleryStone\GalleryStone.csproj", "{50820C3E-B08A-4F69-9C90-211942806C32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryStone.Data", "GalleryStone.Data\GalleryStone.Data.csproj", "{45CCBD73-1BEC-4AC6-9CED-217FA5F8FF30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{50820C3E-B08A-4F69-9C90-211942806C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50820C3E-B08A-4F69-9C90-211942806C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50820C3E-B08A-4F69-9C90-211942806C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CCBD73-1BEC-4AC6-9CED-217FA5F8FF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CCBD73-1BEC-4AC6-9CED-217FA5F8FF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CCBD73-1BEC-4AC6-9CED-217FA5F8FF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CCBD73-1BEC-4AC6-9CED-217FA5F8FF30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
