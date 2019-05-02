@@ -1,0 +1,16 @@
+﻿@model GalleryStone.Models.GalleryIndexModel
+
+<div>   
+    @foreach (var image in Model.Images)
+    {
+    <div style="background-image:url(@image.Url)">
+        Image
+    </div>
+    @foreach (var tag in image.Tags)
+    {
+        <li>
+            @tag.Description
+        </li>
+    }
+    }
+</div>

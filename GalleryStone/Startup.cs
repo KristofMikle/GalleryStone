@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using GalleryStone.Data;
+using GalleryStone.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace GalleryStone
@@ -24,7 +25,8 @@ namespace GalleryStone
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<GalleryStoneDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefultConnection")));
+            services.AddScoped<IImage, ImageService>();
             services.AddMvc();
         }
 
@@ -47,7 +49,7 @@ namespace GalleryStone
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Gallery}/{action=Index}/{id?}");
             });
         }
     }
